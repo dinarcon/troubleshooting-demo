@@ -1,0 +1,59 @@
+# Composer-managed sources
+/web/core/
+/web/modules/contrib/
+/web/themes/contrib/
+/web/profiles/contrib/
+/web/libraries/
+/vendor/
+drush/**/contrib
+
+# Drupal scaffolded files
+# Ref https://github.com/drupal/core composer.json section extra.drupal-scaffold.file-mapping
+/.editorconfig
+/.gitattributes
+/web/.csslintrc
+/web/.eslintignore
+/web/.eslintrc.json
+/web/.ht.router.php
+
+# Not specifically listed in the composer.json nor assets
+/web/autoload.php
+/web/example.gitignore
+/web/index.php
+/web/INSTALL.txt
+/web/README.md
+/web/update.php
+/web/web.config
+/web/sites/README.txt
+/web/sites/development.services.yml
+/web/sites/example.settings.local.php
+/web/sites/example.sites.php
+/web/sites/default/default.services.yml
+/web/sites/default/default.settings.php
+/web/modules/README.txt
+/web/profiles/README.txt
+/web/themes/README.txt
+
+# Settings files (use git add -f for ones you want)
+/web/sites/*/settings*.php
+/web/sites/*/services*.yml
+
+# Content
+/web/sites/*/files/
+
+# Generated/temporary/OS files
+.DS_Store
+/backups/
+/build/
+/tmp/
+*.css.map
+.sass-cache/
+
+# IDE files
+/.idea/
+workspace.code-workspace
+/.vscode/
+
+# Personal files
+gitlab-token
+/.env
