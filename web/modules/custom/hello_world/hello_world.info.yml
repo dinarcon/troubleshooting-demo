@@ -1,0 +1,5 @@
+name: 'Hello World'
+type: module
+description: 'Example module.'
+package: Example
+core_version_requirement: ^10 || ^11
