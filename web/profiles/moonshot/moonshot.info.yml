@@ -1,0 +1,14 @@
+name: Moonshot
+type: profile
+description: 'Example installation profile'
+core_version_requirement: ^10 || ^11
+install:
+  - node
+  - block
+  - breakpoint
+  - dblog
+  - page_cache
+  - dynamic_page_cache
+  - toolbar
+themes:
+  - claro
