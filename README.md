@@ -30,7 +30,7 @@ Below are a series of exercises to practice your troubleshooting skills. Refer t
 Install the site using the `moonshot` installation profile. Then visit Drupal's status report page. Can you determine why it yields a fatal PHP error?
 
 ```
-ddev drush --yes site:install moonshot
+ddev drush site:install --yes --account-pass=admin moonshot
 ddev launch $(ddev drush uli)
 ddev launch /admin/reports/status
 ```
