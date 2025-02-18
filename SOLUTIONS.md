@@ -88,4 +88,4 @@ The `web/modules/custom/hello_world/hello_world.routing.yaml` file does not have
 mv web/modules/custom/hello_world/hello_world.permissions.yaml web/modules/custom/hello_world/hello_world.permissions.yml
 ```
 
-Make sure the `hello_world` world module is enabled. You should see the new `Example permission` in the permissions page.
+Make sure the `hello_world` world module is enabled. You should see the new `Hello world allowed` in the permissions page.
