@@ -1,7 +1,7 @@
 hello_world.salute:
   path: '/hello'
   defaults:
-    _title: 'Hello'
+    _title: 'Hello WORLD!!!'
   _controller: '\Drupal\hello_world\Controller\HelloWorldController::salute'
   requirements:
     _access: 'TRUE'
