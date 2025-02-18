@@ -1,5 +1,5 @@
 name: 'Hello World'
 type: module
-description: 'Example module.'
+description: 'Simple example that does nothing but hello world.'
 package: Example
 core_version_requirement: ^10 || ^11

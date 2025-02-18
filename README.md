@@ -40,17 +40,17 @@ ddev launch /admin/reports/status
 Install the site using any installation profile. Enable the `hello_world` module and go to `/hello`. Anyone (including anonymous users) should see a welcome message, but a page not found error is presented instead. Why?
 
 ```
-ddev drush --yes site:install moonshot
+ddev drush site:install --yes --account-pass=admin demo_umami
 ddev drush pm:enable hello_world
 ddev launch /hello
 ```
 
 ## Permission not being detected
 
-Install the site using any installation profile. Enable the `hello_world` module. The module is supposed to expose a permission named `Example permission`, but it is not being detected. Go to the permissions page and verify that is the case. Why?
+Install the site using any installation profile. Enable the `hello_world` module. The module is supposed to expose a permission named `Hello world allowed`, but it is not being detected. Go to the permissions page and verify the problem. Why?
 
 ```
-ddev drush --yes site:install moonshot
+ddev drush site:install --yes --account-pass=admin demo_umami
 ddev drush pm:enable hello_world
 ddev launch $(ddev drush uli)
 ddev launch /admin/people/permissions
