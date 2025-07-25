@@ -2,48 +2,6 @@
 
 Below are the solutions to the exercises.
 
-
-## WSOD on status page
-
-### Suggestions
-
-* Use your IDE and Xdebug to set a breakpoint at the code error (currently `FormattableMarkup.php on line 238`)
-* Note the exact error, `Argument #1 ($text) must be of type string, null given`, so change the breakpoint to fire only when `null`.
-* Look at the stack trace to see what caller is calling this function with a `null` that should be something better.
-
-### Answer
-
-Custom installation profiles require a `version` key in their `*.info.yml` file. Relevant documentation: [Info file strcuture](https://www.drupal.org/docs/develop/creating-modules/let-drupal-know-about-your-module-with-an-infoyml-file) and this [Drupal core issue](https://www.drupal.org/project/drupal/issues/3270892).
-
-```
-echo 'version: 1.0.0' >> web/profiles/moonshot/moonshot.info.yml
-ddev launch $(ddev drush uli)
-ddev launch /admin/reports/status
-```
-
-The final content of the `web/profiles/moonshot/moonshot.info.yml` file should look like this (any version will solve the problem):
-
-```yaml
-name: Moonshot
-type: profile
-description: 'Example installation profile'
-core_version_requirement: ^10 || ^11
-install:
-  - node
-  - block
-  - breakpoint
-  - dblog
-  - page_cache
-  - dynamic_page_cache
-  - toolbar
-themes:
-  - claro
-version: 1.0.0
-```
-
-The order of the `version` key in the file is not relevant.
-
-
 ## Hello page not found (404)
 
 ### Suggestions
