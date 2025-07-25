@@ -22,18 +22,7 @@ ddev launch
 
 # Exercises
 
-Below are a series of exercises to practice your troubleshooting skills. Refer to [SOLUTIONS.md](/SOLUTIONS.md) to find answers to them.
-
-
-## WSOD on status page
-
-Install the site using the `moonshot` installation profile. Then visit Drupal's status report page. Can you determine why it yields a fatal PHP error?
-
-```
-ddev drush site:install --yes --account-pass=admin moonshot
-ddev launch $(ddev drush uli)
-ddev launch /admin/reports/status
-```
+Below are a couple of exercises to practice your troubleshooting skills. Refer to [SOLUTIONS.md](/SOLUTIONS.md) to find answers to them.
 
 ## Hello page not found
 
