@@ -19,7 +19,6 @@ ddev composer install
 ddev launch
 ```
 
-
 # Exercises
 
 Below are a couple of exercises to practice your troubleshooting skills. Refer to [SOLUTIONS.md](/SOLUTIONS.md) to find answers to them.
